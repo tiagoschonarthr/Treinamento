@@ -1,0 +1,10 @@
+ROUTINE Treinamento.ObjetoExercicio
+TreinamentoObjetoExercicio 
+
+    Kill ^Treinamento.Data.CursoD
+
+    Set curso = ##class(Git.treinamentoInterSystem.TREINAMENTO.Data.Curso).%New()
+    Set curso.Nome = "Obj Iris"
+    Set curso.Preco = 123456.90
+    Set curso.Duracao = 12
+    Set Status = curso.%Save()
