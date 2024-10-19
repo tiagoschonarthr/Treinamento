@@ -1,0 +1,15 @@
+ROUTINE Exercicio
+Exercicio 
+
+ Read "Digite o valor de x",x
+ Read "Digite o valor de y",y
+    Set tCount = 0
+    For a=x:1:y {
+        If a#2 = 0 Write a_"É par", !
+    }
+
+    
+    For i=x:1:y {
+        if i#10=0 Set tCount = tCount+1
+    }
+    Write "Tem"_tCount_"multipos de 10"

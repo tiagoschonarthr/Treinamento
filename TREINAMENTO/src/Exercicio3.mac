@@ -1,0 +1,20 @@
+ROUTINE Exercicio3
+Exercicio3 
+    Read "Insira o valor de num1", num1
+    Read "Insira o valor de num2", num2
+    Read "Insira o valor de num3", num3
+    Set tCount = 0
+    Set tCount2 = 0
+
+    For a=num1:1:num2 {
+        If a#11 = 5 Set tCount = tCount + 1 Write a
+    }
+    Set tCount3 = tCount + a
+    Write tCount3
+
+    For b=num2:1:num3 {
+        If b#3 = 0 Set tCount2 = tCount2 + 1 Write b
+    }
+    
+    write tCount2
+

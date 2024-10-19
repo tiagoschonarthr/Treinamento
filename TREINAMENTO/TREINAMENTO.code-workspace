@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "InterSystems Default Dark Modern",
+		"objectscript.conn": {
+			"active": true
+		}
+	}
+}

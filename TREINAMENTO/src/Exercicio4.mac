@@ -1,0 +1,9 @@
+ROUTINE Exercicio4
+Exercicio4 
+    Read "Insira a matricula do aluno", matricula
+    Read "Insira o nome completo do aluno", nome
+    Read "Insira o telefone do aluno", tel
+    Read "Insira a data de nascimento do aluno", nasc
+    Read "Insira o sexo do aluno", sexo
+
+    

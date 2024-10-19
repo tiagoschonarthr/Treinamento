@@ -1,0 +1,6 @@
+ROUTINE Exercicio7
+Exercicio7 
+    Read "Informe seu nome completo", nome
+
+    Write $LENGTH(nome),!
+    Write $REPLACE(nome," ","|")

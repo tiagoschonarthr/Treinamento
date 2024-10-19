@@ -1,0 +1,24 @@
+ROUTINE Exercicio5
+Exercicio5 
+
+    Read "Informe o numero de alunos para cadastro", x
+    For i=1:1:x {
+
+    Write "Digite os dados do aluno"_i,!    
+    Read "Insira a matricula do aluno", ^tAluno(i,"matricula")
+    Read "Insira o nome completo do aluno", ^tAluno(i,"nome")
+    Read "Insira o telefone do aluno", ^tAluno(i,"tel")
+    Read "Insira a data de nascimento do aluno", ^tAluno(i,"nasc")
+    Read "Insira o sexo do aluno", ^tAluno(i,"sexo")
+    ZW ^tAluno
+    }
+
+    For i=1:1:x {
+    
+    Write "Dados: "_i,!
+    Write "Matricula: ", ^tAluno(i, "matricula"),! 
+    Write "Nome: ", ^tAluno(i, "nome"),! 
+    Write "Telefone: ", ^tAluno(i, "tel"),!
+    Write "Data de nascimento: ", ^tAluno(i, "nasc"),!
+    Write "Sexo: ", ^tAluno(i, "sexo"),!
+    }
