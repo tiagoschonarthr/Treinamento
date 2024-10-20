@@ -2,6 +2,9 @@ ROUTINE Treinamento.ObjetoExercicio
 TreinamentoObjetoExercicio 
 
     Kill ^Treinamento.Data.CursoD
+    Kill ^Treinamento.Data.AlunoD
+    Kill ^Treinamento.Data.InstrutorD
+    Kill ^Treinamento.Data.TurmaD
 
     Set curso = ##class(Treinamento.Data.Curso).%New()
     Set curso.Nome = "Obj Iris"
@@ -9,24 +12,24 @@ TreinamentoObjetoExercicio
     Set curso.Duracao = 12
     Set Status = curso.%Save()
 
-    Set aluno = ##class(Treinamento.Data.Aluno).%New()
-    Set aluno.Nome = "João"
-    Set aluno.Matricula = 152
-    Set aluno.Idade = 20
-    Set Status = aluno.%Save()
+    Set aluno1= ##class(Treinamento.Data.Aluno).%New()
+    Set aluno1.Nome = "João"
+    Set aluno1.Matricula = 152
+    Set aluno1.Idade = 20
+    Set Status = aluno1.%Save()
 
 
-    Set aluno = ##class(Treinamento.Data.Aluno).%New()
-    Set aluno.Nome = "Flavio"
-    Set aluno.Matricula = 145
-    Set aluno.Idade = 19
-    Set Status = aluno.%Save()
+    Set aluno2 = ##class(Treinamento.Data.Aluno).%New()
+    Set aluno2.Nome = "Flavio"
+    Set aluno2.Matricula = 145
+    Set aluno2.Idade = 19
+    Set Status = aluno2.%Save()
 
-    Set aluno = ##class(Treinamento.Data.Aluno).%New()
-    Set aluno.Nome = "Leonardo"
-    Set aluno.Matricula = 22
-    Set aluno.Idade = 18
-    Set Status = aluno.%Save()
+    Set aluno3 = ##class(Treinamento.Data.Aluno).%New()
+    Set aluno3.Nome = "Leonardo"
+    Set aluno3.Matricula = 22
+    Set aluno3.Idade = 18
+    Set Status = aluno3.%Save()
 
     Set instrutor = ##class(Treinamento.Data.Instrutor).%New()
     Set instrutor.Nome = "Andre"
@@ -34,12 +37,12 @@ TreinamentoObjetoExercicio
     Set Status = instrutor.%Save()
 
     Set turma = ##class(Treinamento.Data.Turma).%New()
-    set turma.Curso = Curso
-    set turma.Instrutor = Instrutor
+    set turma.Curso = curso
+    set turma.Instrutor = instrutor
     Set turma.Status = "Inativo"
-    Do turma.Alunos.Insert(Aluno1)
-    Do turma.Alunos.Insert(Aluno2)
-    Do turma.Alunos.Insert(Aluno3)
-    Set Status = Turma.%Save()
+    Do turma.Alunos.Insert(aluno1)
+    Do turma.Alunos.Insert(aluno2)
+    Do turma.Alunos.Insert(aluno3)
+    Set Status = turma.%Save()
 
     
